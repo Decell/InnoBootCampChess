@@ -37,7 +37,7 @@ public class GameThread extends Thread {
                     if (move.equals("INVALID")) {
                         client.alert("Некорректный ход");
                     } else {
-                        client.alert("Вам шах!");
+                        client.alert("Вам шах или мат!");
                     }
                 }
             } catch (IOException e) {
