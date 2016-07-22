@@ -1,7 +1,5 @@
 package ru.innopolis.client;
 
-import ru.innopolis.server.Menu;
-
 /**
  * Created by sentpim on 19.07.2016.
  */

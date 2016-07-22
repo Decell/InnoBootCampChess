@@ -1,6 +1,4 @@
-package ru.innopolis.server;
-
-import ru.innopolis.client.Client;
+package ru.innopolis.client;
 
 import javax.swing.*;
 
@@ -26,7 +24,7 @@ public class Menu extends JFrame {
 
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                String address = JOptionPane.showInputDialog(thisWindow,"Введите IP-адрес сервера");
+                String address = JOptionPane.showInputDialog(thisWindow, "Введите IP-адрес сервера");
                 thisWindow.setTitle("Ожидаем второго игрока...");
                 new Client(address);
                 thisWindow.dispose();
