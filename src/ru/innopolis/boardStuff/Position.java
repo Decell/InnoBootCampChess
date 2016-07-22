@@ -1,7 +1,5 @@
-/**
- * @author Nail Alishev
- *         11-401
- */
+package ru.innopolis.boardStuff;
+
 public class Position {
     private int x;
     private int y;

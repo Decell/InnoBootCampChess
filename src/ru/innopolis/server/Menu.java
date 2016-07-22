@@ -1,6 +1,8 @@
+package ru.innopolis.server;
+
+import ru.innopolis.client.Client;
+
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.WindowEvent;
 
 /**
  * Created by sentpim on 19.07.2016.

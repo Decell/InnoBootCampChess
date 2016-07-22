@@ -1,3 +1,9 @@
+package ru.innopolis.server;
+
+import ru.innopolis.boardStuff.ChessBoard;
+import ru.innopolis.boardStuff.Figure;
+import ru.innopolis.boardStuff.Position;
+
 import java.io.*;
 import java.net.Socket;
 import java.util.List;
@@ -63,18 +69,6 @@ public class Connection implements Runnable {
                             playerMove = playerMove.substring(3);
                         }
 
-
-                        if (isValid(playerMove, eat)) {
-                            if (!checkForCheck(playerMove)) {
-                                numOfMoves++;
-                                break;
-                            } else {
-                                firstPlayerOut.println("CHECK");
-                            }
-                        } else {
-                            firstPlayerOut.println("INVALID");
-                        }
-
                     } else {
 
                         playerMove = secondPlayerIn.readLine();
@@ -87,17 +81,16 @@ public class Connection implements Runnable {
                             playerMove = playerMove.substring(3);
                         }
 
-                        if (isValid(playerMove, eat)) {
-                            if (!checkForCheck(playerMove)) {
-                                numOfMoves++;
-                                break;
-                            } else {
-                                secondPlayerOut.println("CHECK");
-                            }
+                    }
+                    if (isValid(playerMove, eat)) {
+                        if (!checkForCheck(playerMove)) {
+                            numOfMoves++;
+                            break;
                         } else {
-                            secondPlayerOut.println("INVALID");
+                            firstPlayerOut.println("CHECK");
                         }
-
+                    } else {
+                        firstPlayerOut.println("INVALID");
                     }
                 }
 

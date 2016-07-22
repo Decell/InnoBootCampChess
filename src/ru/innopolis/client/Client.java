@@ -1,3 +1,10 @@
+package ru.innopolis.client;
+
+import ru.innopolis.boardStuff.ChessBoard;
+import ru.innopolis.boardStuff.Figure;
+import ru.innopolis.server.GameThread;
+import ru.innopolis.boardStuff.Position;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

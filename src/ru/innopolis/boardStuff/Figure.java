@@ -1,8 +1,5 @@
-/**
- * @author Nail Alishev
- *         11-401
- *         Chess
- */
+package ru.innopolis.boardStuff;
+
 public enum Figure {
     ROOKBLACKLEFT("RookBlack.png", "ROOK", false), HORSEBLACKLEFT("HorseBlack.png", "HORSE", false),
     BISHOPBLACKLEFT("BishopBlack.png", "BISHOP", false), QUEENBLACK("QueenBlack.png", "QUEEN", false),

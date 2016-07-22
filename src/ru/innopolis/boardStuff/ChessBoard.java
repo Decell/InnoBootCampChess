@@ -1,3 +1,5 @@
+package ru.innopolis.boardStuff;
+
 /**
  * Created by sentpim on 19.07.2016.
  */

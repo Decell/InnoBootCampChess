@@ -1,3 +1,9 @@
+package ru.innopolis.server;
+
+import ru.innopolis.boardStuff.Figure;
+import ru.innopolis.boardStuff.Position;
+import ru.innopolis.client.Client;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 
